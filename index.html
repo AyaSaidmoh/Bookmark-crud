@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="interface py-5">
+        <div class="container d-flex align-items-center justify-content-center">
+            <h1>BookMarker</h1>
+        </div>
+    
+        <div class="bookMarker-body w-100 p-3 py-4 mt-5 d-flex align-items-center justify-content-center">
+            <h2>
+                <i class="fa-solid fa-bookmark"></i> 
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+        </div>
+        <div class="container">
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+                <label for="site-name" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2 fw-semibold"></i> 
+                    Site Name
+                </label>
+                <input type="text" placeholder="Bookmark Name" class="form-control mb-1" id="site-name">
+                <div class="invalid-feedback mb-3"></div> <!-- please enter correct site name -->
+
+                <label for="site-url" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2 fw-semibold"></i> 
+                    Site URL
+                </label>
+                <input type="text" placeholder="Website URL" class="form-control mb-1" id="site-url">
+                <div class="invalid-feedback mb-3"></div> <!-- please enter correct URL -->
+
+                <button onclick="adduser()" class="btn btn-submit px-5 align-self-center m-4 position-relative" id="submitBtn">Submit</button>
+
+                <table class="table mt-5 bg-light">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                            <th>Search</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableContent"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+    
+        
+
+
+   
+  
+    
+  

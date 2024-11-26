@@ -1,0 +1,150 @@
+ .interface{
+    background-color: #f7ecde;
+    position: relative;
+    z-index:0;
+    height: 860px;
+ }
+ .interface h1{
+    font-size: 50px;
+    font-family:"Pacifico", cursive;
+    color: #000;
+    position: relative;
+    z-index: -1;
+    
+}
+h1::after {
+    content: "";
+    width: 1300px;
+    height: 4px;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px dotted #000;
+    
+}
+
+.interface h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #000;
+    position: relative;
+}
+
+.interface h1::before {
+    content: "";
+    width: 100%;
+    height: 30%;  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fec260;
+    z-index: -1;
+    transition: height 0s ease, transform 0.5s ease; 
+}
+
+.interface h1:hover::before {
+    height: 50%;
+}
+
+.bookMarker-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+
+}
+.fa-solid, .fas {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
+.btn-submit {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+#submitBtn::before {
+    content: "";
+    width: 1300px; 
+    height: 4px; 
+   
+    position: absolute;
+   bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%); 
+    border-bottom: 2px dotted #000; 
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: center;
+}
+
+.btn-header {
+    background-color: transparent; 
+    border: none; 
+    outline: none; 
+    font-size: 16px; 
+    color: #212529; 
+    cursor: pointer; 
+    text-transform: capitalize;
+    font-size: 25px; 
+    font-weight: 900px;
+}
+
+
+tr td {
+    text-align: center;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #352e28;
+}
+
+.is-valid {
+    border-color: #198754 !important; 
+    background-color: #d1e7dd !important; 
+    color: #198754; 
+}
+
+
+.is-invalid {
+    border-color: #dc3545 !important; 
+    background-color: #f8d7da !important; 
+    color: #dc3545; 
+}
+
+
+.invalid-feedback {
+    color: #dc3545 !important; 
+    font-weight: bold;
+}
+
+
+.valid-feedback {
+    color: #198754 !important; 
+    font-weight: bold;
+}
